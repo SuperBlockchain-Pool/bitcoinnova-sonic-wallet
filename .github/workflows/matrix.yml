@@ -50,6 +50,7 @@ jobs:
           rm -rf ./release/*.blockmap
           rm -rf ./release/*.zip
           rm -rf ./release/*-unpacked
+          rm -rf ./release/*.yml
           rm -rf ./release/mac
           export NAME=$(ls release/BitcoinNova*)
           echo ::set-output name=file_name::${NAME:8}
